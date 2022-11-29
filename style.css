@@ -1,0 +1,255 @@
+:root{
+    --white_first: #fff;
+    --grey_second: #c0c0c0;
+    --blue-btn: #167bf7;
+    --bg-color: #00030C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--white_first);
+    font-size: 16px;
+}
+
+
+.header_section{
+    background-image: url(img/Background.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 40%;
+    align-items: center;
+}
+
+.container_div_combo{
+    align-items: center;
+    text-align: center;
+    display: grid;
+    gap: 1em;
+    margin-left: 5rem;
+}
+
+.combo_title{
+    font-size: 28px;
+}
+
+.combo_img{
+    margin: 1rem auto;
+}
+
+.combo_link{
+    text-decoration: none;
+    color: var(--white_first);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.combo_first_link{
+    background-color: var(--blue-btn);
+}
+
+.combo_second_link{
+    border: 2px solid white
+}
+
+.combo_text{
+    color: var(--grey_second);
+    font-size: 12px;
+}
+
+.container_info_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.container_info_img{
+    width: 50%;
+}
+
+.info_text_wrapper{
+    width: 50%;
+}
+
+.container_info_title{
+    font-size: 48px;
+}
+
+.container_info_text{
+    color: var(--grey_second);
+    margin: .8rem 0;
+}
+
+.info_link{
+    display: inline-block;
+    background-color: var(--blue-btn);
+    border-radius: 5px;
+    color: var(--white_first);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.main_second_section{
+    margin: 5rem;
+}
+
+.second_section_title{
+    font-size: 48px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.container_devices_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.devices_img{
+    width: 100%;
+}
+
+.devices_title{
+    font-size: 32px;
+}
+
+.footer_section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+}
+
+.footer_logo_img{
+    margin: 1rem auto;
+
+}
+
+.footer_list{
+    list-style: none;
+}
+
+.footer_list_items{
+    display: inline-block;
+    margin: 1rem .5rem;
+}
+
+.footer_list_items a{
+    color: var(--white_first);
+    text-decoration: none;
+}
+
+.footer_text{
+    color: var(--grey_second);
+    margin: .5rem 0;
+}
+
+@media screen and (max-width: 700px){
+    
+    .header_section{
+        background-image: none;
+        display: block;
+        grid-template-columns: none;
+    }
+    
+    .container_div_combo{
+        display: block;
+        gap: 1em;
+        margin: 5rem 1rem;
+    }
+    
+    .combo_title{
+        font-size: 25px;
+        margin: 1rem 0;
+    }
+    
+    .combo_img{
+        margin: 2rem auto;
+        max-width: 100%;
+    }
+    
+    .combo_link{
+        display: block;
+        margin: 1rem 0;
+    }
+    
+    .container_info_div{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    
+    .container_info_img{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .info_text_wrapper{
+        width: 100%;
+    }
+    
+    .container_info_title{
+        font-size: 38px;
+    }
+
+    .main_second_section{
+        margin: 5rem 2rem;
+    }
+    
+    .second_section_title{
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .container_devices_div{
+        display: block;
+    }
+    
+    .devices_img{
+        width: 100%;
+    }
+    
+    .devices_title{
+        font-size: 28px;
+    }
+    
+    .footer_section{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 8rem .5rem;
+    }
+    
+    .footer_logo_img{
+        margin: 3rem auto;
+    
+    }
+    
+    .footer_list{
+        list-style: none;
+    }
+    
+    .footer_list_items{
+        display: block;
+        margin: 1rem 0;
+    }
+    
+    .footer_text{
+        color: var(--grey_second);
+        margin: 3rem 0 0;
+    }
+
+}
